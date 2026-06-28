@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="The I Guess raid roster — meet our raiders and view their Warcraft Logs and Raider.IO profiles.">
   <title>Roster — I Guess</title>
-  <link rel="icon" href="images/iguess-icon.png">
+  <link rel="icon" href="images/favicon.png">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,7 +63,7 @@
       HOW TO ADD / EDIT A MEMBER
     ============================================================
       Copy one .member-card block and paste it into the right
-      role group (Tanks / Healers / DPS). Then change:
+      rank group (Leadership / Officers / Raiders). Then change:
 
         1. member-name      -> their character name
         2. member-class     -> their class; set the c-CLASS color
@@ -76,158 +76,140 @@
         4. logs link  href  -> their Warcraft Logs character URL
         5. rio link   href  -> their Raider.IO character URL
 
-      To open a slot, just delete a .member-card or turn it into
-      an .empty card (see the empty examples at the bottom of
-      each group). Update the role-count number to match.
+      Update the role-count number to match how many are in a group.
     ============================================================
     -->
 
     <section class="section-block" aria-label="Raid roster">
       <div class="section-inner">
 
-        <!-- ========== TANKS ========== -->
+        <!-- ========== LEADERSHIP ========== -->
         <div class="role-group">
           <div class="role-header">
             <span class="role-badge tank" aria-hidden="true"></span>
-            <h2 class="role-title">Tanks</h2>
-            <span class="role-count">2 / 4</span>
+            <h2 class="role-title">Leadership</h2>
+            <span class="role-count">1</span>
           </div>
           <div class="roster-grid">
 
             <article class="member-card">
               <div class="member-top">
-                <span class="member-name">Kuwubara</span>
+                <span class="member-name">Kunpachi</span>
                 <span class="member-class c-warrior">Warrior</span>
               </div>
-              <p class="member-spec">Protection</p>
+              <p class="member-spec">GM / Raid Leader · Protection</p>
               <div class="member-links">
-                <a class="member-link logs" href="https://www.warcraftlogs.com/" target="_blank" rel="noopener noreferrer">Logs</a>
-                <a class="member-link rio" href="https://raider.io/" target="_blank" rel="noopener noreferrer">Raider.IO</a>
+                <a class="member-link logs" href="https://www.warcraftlogs.com/character/US/Stormrage/Kunpachi" target="_blank" rel="noopener noreferrer">Logs</a>
+                <a class="member-link rio" href="https://raider.io/characters/us/stormrage/Kunpachi" target="_blank" rel="noopener noreferrer">Raider.IO</a>
               </div>
-            </article>
-
-            <article class="member-card">
-              <div class="member-top">
-                <span class="member-name">Thornhide</span>
-                <span class="member-class c-druid">Druid</span>
-              </div>
-              <p class="member-spec">Guardian</p>
-              <div class="member-links">
-                <a class="member-link logs" href="https://www.warcraftlogs.com/" target="_blank" rel="noopener noreferrer">Logs</a>
-                <a class="member-link rio" href="https://raider.io/" target="_blank" rel="noopener noreferrer">Raider.IO</a>
-              </div>
-            </article>
-
-            <!-- open slot -->
-            <article class="member-card empty">
-              <span class="slot-plus" aria-hidden="true">+</span>
-              <span>Open slot</span>
             </article>
 
           </div>
         </div>
 
-        <!-- ========== HEALERS ========== -->
+        <!-- ========== OFFICERS ========== -->
         <div class="role-group">
           <div class="role-header">
             <span class="role-badge healer" aria-hidden="true"></span>
-            <h2 class="role-title">Healers</h2>
-            <span class="role-count">2 / 5</span>
+            <h2 class="role-title">Officers</h2>
+            <span class="role-count">1</span>
           </div>
           <div class="roster-grid">
 
             <article class="member-card">
               <div class="member-top">
-                <span class="member-name">Mendwell</span>
+                <span class="member-name">Bellawrath</span>
                 <span class="member-class c-priest">Priest</span>
               </div>
-              <p class="member-spec">Holy</p>
+              <p class="member-spec">Discipline</p>
               <div class="member-links">
-                <a class="member-link logs" href="https://www.warcraftlogs.com/" target="_blank" rel="noopener noreferrer">Logs</a>
-                <a class="member-link rio" href="https://raider.io/" target="_blank" rel="noopener noreferrer">Raider.IO</a>
+                <a class="member-link logs" href="https://www.warcraftlogs.com/character/us/tichondrius/bellawrath" target="_blank" rel="noopener noreferrer">Logs</a>
+                <a class="member-link rio" href="https://raider.io/characters/us/tichondrius/Bellawrath" target="_blank" rel="noopener noreferrer">Raider.IO</a>
               </div>
-            </article>
-
-            <article class="member-card">
-              <div class="member-top">
-                <span class="member-name">Tidecaller</span>
-                <span class="member-class c-shaman">Shaman</span>
-              </div>
-              <p class="member-spec">Restoration</p>
-              <div class="member-links">
-                <a class="member-link logs" href="https://www.warcraftlogs.com/" target="_blank" rel="noopener noreferrer">Logs</a>
-                <a class="member-link rio" href="https://raider.io/" target="_blank" rel="noopener noreferrer">Raider.IO</a>
-              </div>
-            </article>
-
-            <article class="member-card empty">
-              <span class="slot-plus" aria-hidden="true">+</span>
-              <span>Open slot</span>
             </article>
 
           </div>
         </div>
 
-        <!-- ========== DPS ========== -->
+        <!-- ========== RAIDERS ========== -->
         <div class="role-group">
           <div class="role-header">
             <span class="role-badge dps" aria-hidden="true"></span>
-            <h2 class="role-title">DPS</h2>
-            <span class="role-count">4 / 11</span>
+            <h2 class="role-title">Raiders</h2>
+            <span class="role-count">6</span>
           </div>
           <div class="roster-grid">
 
             <article class="member-card">
               <div class="member-top">
-                <span class="member-name">Kuwubora</span>
-                <span class="member-class c-shaman">Shaman</span>
+                <span class="member-name">Kodìak</span>
+                <span class="member-class c-druid">Druid</span>
               </div>
-              <p class="member-spec">Elemental</p>
+              <p class="member-spec">Feral</p>
               <div class="member-links">
-                <a class="member-link logs" href="https://www.warcraftlogs.com/" target="_blank" rel="noopener noreferrer">Logs</a>
-                <a class="member-link rio" href="https://raider.io/" target="_blank" rel="noopener noreferrer">Raider.IO</a>
+                <a class="member-link logs" href="https://www.warcraftlogs.com/character/US/Mal'Ganis/Kodìak" target="_blank" rel="noopener noreferrer">Logs</a>
+                <a class="member-link rio" href="https://raider.io/characters/us/malganis/Kodìak" target="_blank" rel="noopener noreferrer">Raider.IO</a>
               </div>
             </article>
 
             <article class="member-card">
               <div class="member-top">
-                <span class="member-name">Vexmar</span>
+                <span class="member-name">Lovehateboth</span>
+                <span class="member-class c-deathknight">Death Knight</span>
+              </div>
+              <p class="member-spec">Unholy</p>
+              <div class="member-links">
+                <a class="member-link logs" href="https://www.warcraftlogs.com/character/US/Hyjal/Lovehateboth" target="_blank" rel="noopener noreferrer">Logs</a>
+                <a class="member-link rio" href="https://raider.io/characters/us/hyjal/Lovehateboth" target="_blank" rel="noopener noreferrer">Raider.IO</a>
+              </div>
+            </article>
+
+            <article class="member-card">
+              <div class="member-top">
+                <span class="member-name">Subalocalyps</span>
+                <span class="member-class c-demonhunter">Demon Hunter</span>
+              </div>
+              <p class="member-spec">Havoc</p>
+              <div class="member-links">
+                <a class="member-link logs" href="https://www.warcraftlogs.com/character/US/Mal'Ganis/Subalocalyps" target="_blank" rel="noopener noreferrer">Logs</a>
+                <a class="member-link rio" href="https://raider.io/characters/us/malganis/Subalocalyps" target="_blank" rel="noopener noreferrer">Raider.IO</a>
+              </div>
+            </article>
+
+            <article class="member-card">
+              <div class="member-top">
+                <span class="member-name">Caesis</span>
                 <span class="member-class c-warlock">Warlock</span>
               </div>
-              <p class="member-spec">Destruction</p>
+              <p class="member-spec">Demonology</p>
               <div class="member-links">
-                <a class="member-link logs" href="https://www.warcraftlogs.com/" target="_blank" rel="noopener noreferrer">Logs</a>
-                <a class="member-link rio" href="https://raider.io/" target="_blank" rel="noopener noreferrer">Raider.IO</a>
+                <a class="member-link logs" href="https://www.warcraftlogs.com/character/US/Illidan/Caesis" target="_blank" rel="noopener noreferrer">Logs</a>
+                <a class="member-link rio" href="https://raider.io/characters/us/illidan/Caesis" target="_blank" rel="noopener noreferrer">Raider.IO</a>
               </div>
             </article>
 
             <article class="member-card">
               <div class="member-top">
-                <span class="member-name">Swiftarrow</span>
-                <span class="member-class c-hunter">Hunter</span>
+                <span class="member-name">Bludclotplot</span>
+                <span class="member-class c-warrior">Warrior</span>
               </div>
-              <p class="member-spec">Marksmanship</p>
+              <p class="member-spec">Fury / Arms</p>
               <div class="member-links">
-                <a class="member-link logs" href="https://www.warcraftlogs.com/" target="_blank" rel="noopener noreferrer">Logs</a>
-                <a class="member-link rio" href="https://raider.io/" target="_blank" rel="noopener noreferrer">Raider.IO</a>
+                <a class="member-link logs" href="https://www.warcraftlogs.com/character/US/Tichondrius/Bludclotplot" target="_blank" rel="noopener noreferrer">Logs</a>
+                <a class="member-link rio" href="https://raider.io/characters/us/tichondrius/Bludclotplot" target="_blank" rel="noopener noreferrer">Raider.IO</a>
               </div>
             </article>
 
             <article class="member-card">
               <div class="member-top">
-                <span class="member-name">Shadowstep</span>
-                <span class="member-class c-rogue">Rogue</span>
+                <span class="member-name">Yupanb</span>
+                <span class="member-class c-paladin">Paladin</span>
               </div>
-              <p class="member-spec">Assassination</p>
+              <p class="member-spec">Holy</p>
               <div class="member-links">
-                <a class="member-link logs" href="https://www.warcraftlogs.com/" target="_blank" rel="noopener noreferrer">Logs</a>
-                <a class="member-link rio" href="https://raider.io/" target="_blank" rel="noopener noreferrer">Raider.IO</a>
+                <a class="member-link logs" href="https://www.warcraftlogs.com/character/id/106329185" target="_blank" rel="noopener noreferrer">Logs</a>
+                <a class="member-link rio" href="https://raider.io/characters/us/area-52/Yupanb" target="_blank" rel="noopener noreferrer">Raider.IO</a>
               </div>
-            </article>
-
-            <article class="member-card empty">
-              <span class="slot-plus" aria-hidden="true">+</span>
-              <span>Open slot</span>
             </article>
 
           </div>
@@ -240,7 +222,7 @@
     <section class="section-block dark-section" aria-labelledby="cta-heading">
       <div class="section-inner" style="text-align:center;">
         <h2 class="section-title" id="cta-heading">Want your name on this page?</h2>
-        <p class="body-text" style="margin:0 auto 2rem;text-align:center;">We've got open slots in every role. Throw your hat in.</p>
+        <p class="body-text" style="margin:0 auto 2rem;text-align:center;">We're recruiting. Throw your hat in.</p>
         <a href="apply.html" class="btn-primary btn-large">Apply to raid</a>
       </div>
     </section>
@@ -255,7 +237,7 @@
           <span class="logo-emblem" aria-hidden="true"></span>
           <span class="logo-text">I Guess</span>
         </a>
-        <p class="footer-tagline">A raiding guild that clears content and keeps it light.</p>
+        <p class="footer-tagline">Let's kill stuff and get loot.</p>
       </div>
       <nav class="footer-nav" aria-label="Footer navigation">
         <div class="footer-col">
@@ -269,9 +251,8 @@
         <div class="footer-col">
           <h3 class="footer-heading">Links</h3>
           <ul>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Discord</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Warcraft Logs</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Raider.IO</a></li>
+            <li><a href="https://www.warcraftlogs.com/guild/us/area-52/i%20guess" target="_blank" rel="noopener noreferrer">Warcraft Logs</a></li>
+            <li><a href="https://raider.io/guilds/us/area-52/I%20Guess" target="_blank" rel="noopener noreferrer">Raider.IO</a></li>
           </ul>
         </div>
       </nav>

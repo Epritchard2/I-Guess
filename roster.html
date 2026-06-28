@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The I Guess raid roster — meet our raiders and view their Warcraft Logs and Raider.IO profiles.">
+  <title>Roster — I Guess</title>
+  <link rel="icon" href="images/iguess-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ===== HEADER ===== -->
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="I Guess — home">
+        <span class="logo-emblem" aria-hidden="true"></span>
+        <span class="logo-text">I Guess</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="roster.html" class="nav-link active">Roster</a></li>
+          <li><a href="apply.html" class="nav-link">Apply</a></li>
+        </ul>
+      </nav>
+      <div class="header-controls">
+        <a href="apply.html" class="btn-primary">Apply now</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobile-menu-btn"
+        aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="roster.html">Roster</a></li>
+        <li><a href="apply.html">Apply</a></li>
+      </ul>
+      <div class="mobile-controls">
+        <a href="apply.html" class="btn-primary">Apply now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <div class="page-head">
+      <p class="section-tag">The crew</p>
+      <h1 class="section-title">Roster</h1>
+      <div class="divider" aria-hidden="true"></div>
+      <p class="body-text">The people who show up and get it done. Click any name's links to see their logs and Mythic+ profile.</p>
+    </div>
+
+    <!--
+    ============================================================
+      HOW TO ADD / EDIT A MEMBER
+    ============================================================
+      Copy one .member-card block and paste it into the right
+      role group (Tanks / Healers / DPS). Then change:
+
+        1. member-name      -> their character name
+        2. member-class     -> their class; set the c-CLASS color
+                               class on the same span. Options:
+                               c-deathknight c-demonhunter c-druid
+                               c-evoker c-hunter c-mage c-monk
+                               c-paladin c-priest c-rogue c-shaman
+                               c-warlock c-warrior
+        3. member-spec      -> their spec, e.g. "Elemental"
+        4. logs link  href  -> their Warcraft Logs character URL
+        5. rio link   href  -> their Raider.IO character URL
+
+      To open a slot, just delete a .member-card or turn it into
+      an .empty card (see the empty examples at the bottom of
+      each group). Update the role-count number to match.
+    ============================================================
+    -->
+
+    <section class="section-block" aria-label="Raid roster">
+      <div class="section-inner">
+
+        <!-- ========== TANKS ========== -->
+        <div class="role-group">
+          <div class="role-header">
+            <span class="role-badge tank" aria-hidden="true"></span>
+            <h2 class="role-title">Tanks</h2>
+            <span class="role-count">2 / 4</span>
+          </div>
+          <div class="roster-grid">
+
+            <article class="member-card">
+              <div class="member-top">
+                <span class="member-name">Kuwubara</span>
+                <span class="member-class c-warrior">Warrior</span>
+              </div>
+              <p class="member-spec">Protection</p>
+              <div class="member-links">
+                <a class="member-link logs" href="https://www.warcraftlogs.com/" target="_blank" rel="noopener noreferrer">Logs</a>
+                <a class="member-link rio" href="https://raider.io/" target="_blank" rel="noopener noreferrer">Raider.IO</a>
+              </div>
+            </article>
+
+            <article class="member-card">
+              <div class="member-top">
+                <span class="member-name">Thornhide</span>
+                <span class="member-class c-druid">Druid</span>
+              </div>
+              <p class="member-spec">Guardian</p>
+              <div class="member-links">
+                <a class="member-link logs" href="https://www.warcraftlogs.com/" target="_blank" rel="noopener noreferrer">Logs</a>
+                <a class="member-link rio" href="https://raider.io/" target="_blank" rel="noopener noreferrer">Raider.IO</a>
+              </div>
+            </article>
+
+            <!-- open slot -->
+            <article class="member-card empty">
+              <span class="slot-plus" aria-hidden="true">+</span>
+              <span>Open slot</span>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ========== HEALERS ========== -->
+        <div class="role-group">
+          <div class="role-header">
+            <span class="role-badge healer" aria-hidden="true"></span>
+            <h2 class="role-title">Healers</h2>
+            <span class="role-count">2 / 5</span>
+          </div>
+          <div class="roster-grid">
+
+            <article class="member-card">
+              <div class="member-top">
+                <span class="member-name">Mendwell</span>
+                <span class="member-class c-priest">Priest</span>
+              </div>
+              <p class="member-spec">Holy</p>
+              <div class="member-links">
+                <a class="member-link logs" href="https://www.warcraftlogs.com/" target="_blank" rel="noopener noreferrer">Logs</a>
+                <a class="member-link rio" href="https://raider.io/" target="_blank" rel="noopener noreferrer">Raider.IO</a>
+              </div>
+            </article>
+
+            <article class="member-card">
+              <div class="member-top">
+                <span class="member-name">Tidecaller</span>
+                <span class="member-class c-shaman">Shaman</span>
+              </div>
+              <p class="member-spec">Restoration</p>
+              <div class="member-links">
+                <a class="member-link logs" href="https://www.warcraftlogs.com/" target="_blank" rel="noopener noreferrer">Logs</a>
+                <a class="member-link rio" href="https://raider.io/" target="_blank" rel="noopener noreferrer">Raider.IO</a>
+              </div>
+            </article>
+
+            <article class="member-card empty">
+              <span class="slot-plus" aria-hidden="true">+</span>
+              <span>Open slot</span>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ========== DPS ========== -->
+        <div class="role-group">
+          <div class="role-header">
+            <span class="role-badge dps" aria-hidden="true"></span>
+            <h2 class="role-title">DPS</h2>
+            <span class="role-count">4 / 11</span>
+          </div>
+          <div class="roster-grid">
+
+            <article class="member-card">
+              <div class="member-top">
+                <span class="member-name">Kuwubora</span>
+                <span class="member-class c-shaman">Shaman</span>
+              </div>
+              <p class="member-spec">Elemental</p>
+              <div class="member-links">
+                <a class="member-link logs" href="https://www.warcraftlogs.com/" target="_blank" rel="noopener noreferrer">Logs</a>
+                <a class="member-link rio" href="https://raider.io/" target="_blank" rel="noopener noreferrer">Raider.IO</a>
+              </div>
+            </article>
+
+            <article class="member-card">
+              <div class="member-top">
+                <span class="member-name">Vexmar</span>
+                <span class="member-class c-warlock">Warlock</span>
+              </div>
+              <p class="member-spec">Destruction</p>
+              <div class="member-links">
+                <a class="member-link logs" href="https://www.warcraftlogs.com/" target="_blank" rel="noopener noreferrer">Logs</a>
+                <a class="member-link rio" href="https://raider.io/" target="_blank" rel="noopener noreferrer">Raider.IO</a>
+              </div>
+            </article>
+
+            <article class="member-card">
+              <div class="member-top">
+                <span class="member-name">Swiftarrow</span>
+                <span class="member-class c-hunter">Hunter</span>
+              </div>
+              <p class="member-spec">Marksmanship</p>
+              <div class="member-links">
+                <a class="member-link logs" href="https://www.warcraftlogs.com/" target="_blank" rel="noopener noreferrer">Logs</a>
+                <a class="member-link rio" href="https://raider.io/" target="_blank" rel="noopener noreferrer">Raider.IO</a>
+              </div>
+            </article>
+
+            <article class="member-card">
+              <div class="member-top">
+                <span class="member-name">Shadowstep</span>
+                <span class="member-class c-rogue">Rogue</span>
+              </div>
+              <p class="member-spec">Assassination</p>
+              <div class="member-links">
+                <a class="member-link logs" href="https://www.warcraftlogs.com/" target="_blank" rel="noopener noreferrer">Logs</a>
+                <a class="member-link rio" href="https://raider.io/" target="_blank" rel="noopener noreferrer">Raider.IO</a>
+              </div>
+            </article>
+
+            <article class="member-card empty">
+              <span class="slot-plus" aria-hidden="true">+</span>
+              <span>Open slot</span>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section-block dark-section" aria-labelledby="cta-heading">
+      <div class="section-inner" style="text-align:center;">
+        <h2 class="section-title" id="cta-heading">Want your name on this page?</h2>
+        <p class="body-text" style="margin:0 auto 2rem;text-align:center;">We've got open slots in every role. Throw your hat in.</p>
+        <a href="apply.html" class="btn-primary btn-large">Apply to raid</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" aria-label="I Guess home">
+          <span class="logo-emblem" aria-hidden="true"></span>
+          <span class="logo-text">I Guess</span>
+        </a>
+        <p class="footer-tagline">A raiding guild that clears content and keeps it light.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-col">
+          <h3 class="footer-heading">Guild</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="roster.html">Roster</a></li>
+            <li><a href="apply.html">Apply</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Links</h3>
+          <ul>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Discord</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Warcraft Logs</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Raider.IO</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 I Guess. Not affiliated with Blizzard Entertainment.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

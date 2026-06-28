@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="I Guess — a World of Warcraft raiding guild. Laid-back attitude, serious about progression. Now recruiting.">
+  <title>I Guess — WoW Raiding Guild</title>
+  <link rel="icon" href="images/iguess-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ===== HEADER ===== -->
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="I Guess — home">
+        <span class="logo-emblem" aria-hidden="true"></span>
+        <span class="logo-text">I Guess</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="roster.html" class="nav-link">Roster</a></li>
+          <li><a href="apply.html" class="nav-link">Apply</a></li>
+        </ul>
+      </nav>
+      <div class="header-controls">
+        <a href="apply.html" class="btn-primary">Apply now</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobile-menu-btn"
+        aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="roster.html">Roster</a></li>
+        <li><a href="apply.html">Apply</a></li>
+      </ul>
+      <div class="mobile-controls">
+        <a href="apply.html" class="btn-primary">Apply now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-inner" data-reveal>
+        <img src="images/iguess-banner.png" alt="I Guess guild logo" class="hero-banner" width="560">
+        <h1 class="sr-only" id="hero-heading">I Guess — World of Warcraft raiding guild</h1>
+        <p class="hero-eyebrow">Raiding Guild · Now Recruiting</p>
+        <p class="hero-description">
+          We don't take ourselves too seriously — but we take the bosses down anyway.
+          A relaxed crew that still clears the content. Pull up a chair.
+        </p>
+        <div class="hero-cta">
+          <a href="apply.html" class="btn-primary btn-large">Apply to raid</a>
+          <a href="roster.html" class="btn-ghost btn-large">Meet the roster</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section-block" id="about" aria-labelledby="about-heading">
+      <div class="section-inner">
+        <p class="section-tag">Who we are</p>
+        <h2 class="section-title" id="about-heading">Serious about clears. Casual about everything else.</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="about-cols">
+          <div class="about-text-col">
+            <p class="body-text" data-reveal>
+              I Guess is a raiding guild built around a simple idea: show up, play well, and have
+              a good time doing it. No screaming in voice chat, no spreadsheet homework as a personality —
+              just consistent pulls, solid prep, and people who actually like each other.
+            </p>
+            <p class="body-text" data-reveal>
+              We raid a couple nights a week and push progression at a steady pace. If you know your
+              class, take feedback well, and bring good vibes, you'll fit right in.
+            </p>
+            <a href="apply.html" class="btn-ghost" style="margin-top:0.5rem;">Read the requirements</a>
+          </div>
+          <div class="about-stats-col">
+            <!-- EDIT: update these to reflect current status -->
+            <ul class="stat-list" aria-label="Guild status">
+              <li><span class="stat-num">4/10</span><span class="stat-label">Mythic</span></li>
+              <li><span class="stat-num">10/10</span><span class="stat-label">Heroic</span></li>
+              <li><span class="stat-num">2</span><span class="stat-label">Nights / Week</span></li>
+              <li><span class="stat-num">8</span><span class="stat-label">Raiders</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHAT WE OFFER ===== -->
+    <section class="section-block dark-section" id="offer" aria-labelledby="offer-heading">
+      <div class="section-inner">
+        <p class="section-tag">The deal</p>
+        <h2 class="section-title" id="offer-heading">What you get</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="feature-grid">
+          <article class="feature-card" data-reveal>
+            <div class="feature-icon" aria-hidden="true"></div>
+            <h3 class="feature-name">Steady progression</h3>
+            <p class="feature-desc">We clear current content at a sustainable pace — far enough to feel rewarding, chill enough to stay fun.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <div class="feature-icon" aria-hidden="true"></div>
+            <h3 class="feature-name">A real community</h3>
+            <p class="feature-desc">M+ keys, alt runs, transmog hunts, and off-night nonsense. People stick around because they like the group.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <div class="feature-icon" aria-hidden="true"></div>
+            <h3 class="feature-name">No drama</h3>
+            <p class="feature-desc">Feedback is direct and kind. Mistakes are fine. Egos stay at the door. Everyone's here to get better.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RAID SCHEDULE ===== -->
+    <section class="section-block" id="schedule" aria-labelledby="schedule-heading">
+      <div class="section-inner">
+        <p class="section-tag">When we raid</p>
+        <h2 class="section-title" id="schedule-heading">Schedule</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <div class="feature-grid">
+          <!-- EDIT: set your real raid nights/times -->
+          <article class="feature-card" data-reveal>
+            <h3 class="feature-name">Tuesday</h3>
+            <p class="feature-desc">7:30 – 11:00 PM EST · Progression</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <h3 class="feature-name">Wednesday</h3>
+            <p class="feature-desc">7:30 – 11:00 PM EST · Progression</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <h3 class="feature-name">Off nights</h3>
+            <p class="feature-desc">Mythic+ and alt clears whenever people are around. Optional, always.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section-block dark-section" aria-labelledby="cta-heading">
+      <div class="section-inner" style="text-align:center;">
+        <h2 class="section-title" id="cta-heading" data-reveal>Think you're a fit?</h2>
+        <p class="body-text" style="margin:0 auto 2rem;text-align:center;" data-reveal>
+          Recruitment is open. Applications go straight to the officers, and you'll get a Discord
+          invite to chat with us once you submit.
+        </p>
+        <a href="apply.html" class="btn-primary btn-large" data-reveal>Start your application</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" aria-label="I Guess home">
+          <span class="logo-emblem" aria-hidden="true"></span>
+          <span class="logo-text">I Guess</span>
+        </a>
+        <p class="footer-tagline">A raiding guild that clears content and keeps it light.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <div class="footer-col">
+          <h3 class="footer-heading">Guild</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="roster.html">Roster</a></li>
+            <li><a href="apply.html">Apply</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Links</h3>
+          <ul>
+            <!-- EDIT: drop in your real links -->
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Discord</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Warcraft Logs</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Raider.IO</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 I Guess. Not affiliated with Blizzard Entertainment.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
